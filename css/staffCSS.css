@@ -1,0 +1,74 @@
+/*
+Clara Robin & Amy Churchill
+Last edit: Jan 4th 2019, amy
+Style sheet for staff page of FBLA contest
+*/
+section#mainPic {
+	min-height:450px;
+	background:url('../imgs/img2.png') no-repeat center center fixed;
+	background-size: cover;
+	text-align:center;
+	color: #485F77;
+	border-bottom: #485F77 3px solid;
+}
+
+section#title h1{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 28pt;
+	font-weight: normal;
+	min-width: 200px;
+}
+
+section#title p{
+	font: 16px/2 Esteban, sans-serif;
+	text-align: center;
+	width: 700px;
+	margin: auto;
+}
+
+section#title, section.boxes {
+	margin: 50px 0px 25px 0px;
+}
+
+section.boxes div.box{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 25px 0px 25px 0px;
+}
+
+section.boxes div.box div.text {
+	width: 50%;
+}
+
+section.boxes div.box img {
+	margin: 40px;
+	float: left;
+}
+
+section.boxes div.box div.text p {
+	font: 16px/1.5 Esteban, sans-serif;
+}
+
+
+@media all and (max-width:800px) {
+	
+	section.boxes div.box {
+		flex-wrap: wrap;
+	}
+	section.boxes div.box div.text {
+		text-align: center;
+		width: 100%;
+	}
+	section#title p{
+		width: 100%;
+	}
+	
+}
+
+
+span {
+	font-family: Monserrat, sans-serif;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html> 
+<!-- 
+Clara Robin & Amy Churchill
+Last edit: Jan 4th 2019, clara
+Pricing/Rates web page for FBLA contest
+ -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head> 
+	<link rel="stylesheet" type="text/css" href="css/globalCSS.css">
+	<link rel="stylesheet" type="text/css" href="css/calenderCSS.css">
+	<link rel="stylesheet" type="text/css" href="css/ratesCSS.css">
+	<link rel="icon" href="imgs/logo.png" type="image/PNG" sizes="16x16">
+	<link href="https://fonts.googleapis.com/css?family=Esteban|Montserrat:400,700" rel="stylesheet">
+	<title> ACCURACY | Prices </title>
+	
+	<script>
+		function formChange() {	
+			var date = document.getElementById("demo").value;
+			var phone = document.getElementById("phone").value;
+			
+			document.getElementById("form").innerHTML = "<h2> Consultation Confirmation </h2> <p> Thank you for scheduling your consultaion! </p> <p> Provided phone number: <br> " + phone + " </p> <p> Selected date/time: <br> " + date + " </p> <p> Someone will be contacting you at the number displayed above to confirm the meeting. If a mistake has been made, please immediatly call the number (630) 907 - 5000 </p>" 
+		};
+	
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div id="navName">
+				<h1 class="name"> ACCURACY </h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="staff.html">STAFF</a></li>
+					<li class="current"><a href="rates.html">PRICES</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<section id="mainPic">
+		<div class="container">
+			<img src="imgs/logo.png">
+			<h1>PRICES</h1>
+		</div>
+	</section>
+	
+	<section id="main">
+		<div class="container">
+			<h1> OUR PRICES </h1>
+			<div id="allPrices">
+				<div class="service">
+					<h2> Initial consultation </h2>
+					<p> A non-committal meeting with several members of our staff. We will talk to you about what we specifically offer and how we can help you. If you choose not to work with us, we will cut the price of your consultation in half, so why not? Schedule your consultation today. </p>
+					<p> $25 per 15min </p>
+				</div>
+				<div class="service">
+					<h2> Periodical Payments </h2>
+					<p> Once you decide to work with us, we charge on a quarterly or monthly, depending on how long you work like our services. Exact prices will be determined at your consultation and our services are always cancellable. </p>
+					<p> Monthly: $200-$350 <br> Quarterly: $350-$500 </p>
+				</div>
+				
+			</div>
+				
+			<div id="form">
+				<h2> Schedule Your Consultation </h2>
+			
+				<div id="calenderDiv">
+				
+					<script type="text/javascript" src="tail.datetime.min.js"></script>
+
+					<div id="datetime-demo-holder" class="datetime-folder"></div>
+
+					<script type="text/javascript">
+					
+					document.addEventListener("DOMContentLoaded", function(){
+					tail.DateTime("#demo", {
+						animate: true,
+						classNames: false,
+						closeButton: true,              // New in 0.4.5
+						dateFormat: "F dd YYYY",
+						dateStart: new Date(),
+						dateRanges: [
+						// Will Disable Each Sunday and Saturday
+							{
+							  days: ["SUN", "SAT"]
+							}
+						],
+						dateBlacklist: true,
+						dateEnd: false,
+						locale: "en",
+						position: "#datetime-demo-holder",
+						rtl: "auto",
+						startOpen: true,
+						stayOpen: true,
+						timeFormat: "HH:ii",
+						timeHours: 12,                
+						timeMinutes: 00,              
+						timeSeconds: 00,                 
+						timeIncrement: true,            
+						timeStepHours: 1,               
+						timeStepMinutes: 30,             
+						timeStepSeconds: 5,             
+						today: true,
+						tooltips: [],
+						viewDefault: "days",
+						viewDays: true,
+						weekStart: 0,
+						zeroSeconds: false
+						});
+					});
+					
+					</script>
+				</div>
+				
+				<form>					
+					<p> Please enter a contact number: </p>
+					<input type="text" id="phone" value="(123) 456 7890">
+					<input type="text" id="demo" class="demo" hidden required>
+					<br>
+					<input type="button" value="Confirm" id="confirm" onClick="formChange()">
+				
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div id="contact">
+				<h1> CONTACT US: </h1>
+				<a href="https://www.facebook.com/" target="_blank"> <img src="imgs/facebook.png"> </a>
+				<a href="https://www.instagram.com/" target="_blank"> <img src="imgs/instagram.png"> </a>
+				<a href="https://www.linkedin.com/" target="_blank"> <img src="imgs/linkedin.png"> </a>
+				<a href="https://twitter.com/" target="_blank"> <img src="imgs/twitter.png"> </a>
+				<p> accuracyaccounting@qmail.com </p>
+				<p> (630) 907 - 5000 </p>
+			</div>
+			<div id="other">
+				<h1> OTHER INFORMATION: </h1>
+				<p> All icons retrieved from <a href="https://www.flaticon.com/" target="_blank"> FLATICON </a> </p>
+				<p> All images retrieved from <a href="https://www.pexels.com/" target="_blank"> Pexels </a> </p>
+				<p> This website is for educational use only. Please do not inquire about any of the services described </p>
+			</div>
+		</div>
+	</footer>
+	
+	
+</body>
+
+</html>
