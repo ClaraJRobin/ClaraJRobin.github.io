@@ -2,9 +2,7 @@
  
 Clara J Robin
 
-Responsive Site Example
-
-Built as an entry into an extracurricular competition. Given a short prompt with few requirements. The site is responsive and interactive.
+Responsive Site
 
 A calendar plugin is used with specific parameters.
 
