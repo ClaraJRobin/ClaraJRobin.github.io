@@ -1,6 +1,6 @@
 # ClaraJRobin.github.io
  
-Clara J Robin, Jan 2019
+Clara J Robin
 
 Responsive Site Example
 
